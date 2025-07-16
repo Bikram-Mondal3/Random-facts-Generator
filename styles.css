@@ -317,6 +317,80 @@
      display: block;
  }
 
+ /* Topic Selection Styles */
+ .topic-selection {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 25px;
+     background: var(--card-bg);
+     border-radius: 12px;
+     padding: 15px 20px;
+     box-shadow: var(--card-shadow);
+     border: 1px solid var(--card-border);
+     width: 100%;
+     max-width: 400px;
+ }
+
+ .topic-selection label {
+     margin-right: 15px;
+     font-weight: 500;
+     color: var(--text);
+ }
+
+ #topicSelect {
+     padding: 8px 12px;
+     border-radius: 8px;
+     border: 1px solid var(--dice-border);
+     background-color: var(--bg);
+     color: var(--text);
+     font-family: 'Inter', sans-serif;
+     font-size: 0.95rem;
+     appearance: none;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+     background-position: right 10px center;
+     padding-right: 30px;
+     transition: all 0.2s;
+     min-width: 180px;
+     cursor: pointer;
+ }
+
+ #topicSelect:hover, #topicSelect:focus {
+     border-color: var(--accent);
+     outline: none;
+ }
+
+ /* Loading Indicator */
+ .loading-indicator {
+     display: none;
+     align-items: center;
+     justify-content: center;
+     margin: 20px 0;
+     color: var(--accent);
+     font-weight: 500;
+ }
+
+ .loading-indicator.active {
+     display: flex;
+ }
+
+ .spinner {
+     width: 24px;
+     height: 24px;
+     border: 3px solid rgba(var(--accent-rgb), 0.3);
+     border-radius: 50%;
+     border-top-color: var(--accent);
+     animation: spin 1s linear infinite;
+     margin-right: 10px;
+ }
+
+ @keyframes spin {
+     to {
+         transform: rotate(360deg);
+     }
+ }
+
  @media (max-width: 768px) {
      .facts-list {
          gap: 16px;
@@ -325,6 +399,19 @@
      .fact-card {
          min-width: 100%;
          max-width: 100%;
+     }
+     
+     .topic-selection {
+         flex-direction: column;
+         gap: 10px;
+     }
+     
+     .topic-selection label {
+         margin-right: 0;
+     }
+     
+     #topicSelect {
+         width: 100%;
      }
  }
 
