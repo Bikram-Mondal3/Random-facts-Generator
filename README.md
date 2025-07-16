@@ -1,5 +1,6 @@
 # 🎲 Random Agent AI Facts Generator
 
+![Screenshot](images/screenshot.jpg)
 An interactive web application that generates random facts about Agent-based AI systems through a dice roll mechanism. Roll the dice and learn something new about Agent AI!
 
 ## 🌟 Features
@@ -22,7 +23,7 @@ An interactive web application that generates random facts about Agent-based AI 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Random-facts-Generator.git
+git clone https://github.com/Bikram-Mondal3/Random-facts-Generator.git
 ```
 
 2. Navigate to the project directory:
@@ -43,15 +44,10 @@ cd Random-facts-Generator
 
 This application provides interesting facts about Agent-based AI systems, which are composed of autonomous entities (agents) that perceive and act within environments. These systems are used in robotics, finance, gaming, smart homes, and many other fields.
 
-## 🖼️ Screenshots
-
-![Light Mode Screenshot](screenshots/light-mode.png)
-![Dark Mode Screenshot](screenshots/dark-mode.png)
-
 ## 🤝 Contribution
 
 Feel free to fork this repository, submit issues, or send pull requests to improve the application.
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the `MIT License`.
