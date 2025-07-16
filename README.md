@@ -1,4 +1,4 @@
-# 🎲 Random Facts Generator
+# 🎲⭐ Random Facts Generator
 
 ![Screenshot](images/screenshot.jpg)
 An interactive web application that generates random facts on various topics through a dice roll mechanism. Roll the dice and learn something new about your favorite topics!
