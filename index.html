@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Agent AI Facts Dice - Learn about agent-based artificial intelligence through an interactive dice game">
+  <meta name="theme-color" content="#131920">
+  <title>Agent AI Facts Dice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <div class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+    <span id="themeIcon">🌙</span>
+    <div class="toggle-track">
+      <div class="toggle-knob"></div>
+    </div>
+  </div>
+  <div class="container">
+    <header>
+      <h1><span class="gradient-text">Random Agent AI Facts Generator</span> <span class="emoji">🎲</span></h1>
+      <div class="intro">
+        Roll the dice to discover interesting facts about Agent AI systems and their applications in various fields.
+      </div>
+    </header>
+    <div class="dice-area">
+      <div class="dice" id="dice" tabindex="0" aria-label="Roll the dice" role="button">
+        <div class="dice-face" id="diceFace">
+          <!-- Dots will be rendered here -->
+        </div>
+      </div>
+      <div class="roll-label">Roll the dice to see that many Agent AI facts!</div>
+    </div>
+    <div class="facts-list" id="factsList">
+      <!-- Fact cards will be rendered here -->
+    </div>
+  </div>
+  <audio id="rollSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9b3e6e.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
