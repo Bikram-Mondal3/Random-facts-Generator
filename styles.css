@@ -8,7 +8,7 @@
  :root {
      /* Light theme */
      --bg: #f8fafc;
-     --bg-pattern: #edf2f7;
+     --bg-pattern: #d4dbe5; /* Made darker for better visibility */
      --card-bg: #ffffff;
      --text: #1a202c;
      --text-secondary: #4a5568;
@@ -33,7 +33,7 @@
  [data-theme="dark"] {
      /* Dark theme */
      --bg: #131920;
-     --bg-pattern: #1a202c;
+     --bg-pattern: #2c3644; /* Made lighter for better visibility */
      --card-bg: #1e2734;
      --text: #f1f5f9;
      --text-secondary: #cbd5e1;
@@ -60,7 +60,7 @@
      margin: 0;
      font-family: 'Inter', sans-serif;
      background-color: var(--bg);
-     background-image: radial-gradient(var(--bg-pattern) 1px, transparent 1px);
+     background-image: radial-gradient(var(--bg-pattern) 1.5px, transparent 1.5px); /* Increased dot size from 1px to 1.5px for better visibility */
      background-size: 20px 20px;
      color: var(--text);
      min-height: 100vh;
